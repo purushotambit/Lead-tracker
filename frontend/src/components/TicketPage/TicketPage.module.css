@@ -1,0 +1,50 @@
+.ticket{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* background-color: black; */
+}
+input{
+    height: 20px;
+    width: 200px;
+    position: relative;
+}
+
+label{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.item{
+    margin-bottom: 10px;
+    /* background-color: black; */
+}
+#email{
+    position: relative;
+    left: 31px;
+}
+#phone{
+    position: relative;
+    left: 4px;
+}
+#source{
+    position: relative;
+    left: 22px;
+}
+
+#button{
+    /* align-items: center; */
+    /* align-content: center; */
+    margin-left: 85px;
+    /* background-color: #007bff; */
+    /* color: white; */
+    height: 30px;
+    width: 100px;
+}
+h4{
+    margin-left: 10px;
+    
+}
+#duedate{
+    margin-left: 10px;
+}
