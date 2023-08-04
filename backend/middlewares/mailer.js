@@ -1,12 +1,13 @@
 const nodemailer = require('nodemailer');
 const handlebars = require('handlebars');
-
+const EMAIL = process.env.EMAIL;
+const PASSWORD = process.env.PASSWORD;
 const transporter = nodemailer.createTransport({
   host: "smtp-relay.sendinblue.com",
   port: 587,
   auth: {
-    user: "kanikathapliyal123@gmail.com",
-    pass: "xsmtpsib-1014e204735b7e785a0d26b1854dec13b950bc048cf2f7c010b2a1cde60232d5-H9qgMp2zkc3VAZ7R",
+    user: EMAIL,
+    pass: PASSWORD,
   },
 });
 
@@ -32,7 +33,7 @@ const sendEmail = async (recipientEmail, firstName, subject) => {
   const htmlContent = emailTemplate({ firstName, subject });
 
   const mailOptions = {
-    from: 'kanikathapliyal123@gmail.com',
+    from: EMAIL,
     to: recipientEmail,
     subject: subject,
     html: htmlContent,
